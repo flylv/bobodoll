@@ -19,7 +19,7 @@
         endif; ?>
       </section>   
 
-      <section class="header-search show-for-large-up"><?php get_template_part('templates/searchformheader', 'header'); ?></section>    
+      <section class="header-search show-for-large-up"><?php get_template_part('templates/search-form-header'); ?></section>    
     </nav>
 
   </header>
