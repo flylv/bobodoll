@@ -6,6 +6,18 @@
       ],
       "main": true
     },
+    "slick-carousel.js": {
+      "files": [
+        "scripts/slick-carousel.js"
+      ],
+      "main": true
+    },
+    "slick.js": {
+      "files": [
+        "scripts/slick.js"
+      ],
+      "main": true
+    },
     "main.css": {
       "files": [
         "styles/main.scss"
@@ -17,6 +29,21 @@
         "styles/editor-style.scss"
       ]
     },
+    "slick-carousel.css": {
+      "files": [
+        "styles/slick-carousel.css"
+      ]
+    }, 
+    "slick-theme.css": {
+      "files": [
+        "styles/slick-theme.css"
+      ]
+    },   
+    "animate.css": {
+      "files": [
+        "styles/animate.css"
+      ]
+    },  
     "jquery.js": {
       "bower": ["jquery"]
     },
@@ -25,6 +52,6 @@
     }
   },
   "config": {
-    "devUrl": "http://example.dev"
+    "devUrl": "http://localhost:80/bobodoll/"
   }
 }

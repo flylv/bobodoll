@@ -31,6 +31,25 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+
+         $('.homeslide').slick({
+            arrows: false,
+            dots: true,
+            autoplay: false,
+            pauseOnHover: false,
+            autoplaySpeed: 5000,
+            adaptiveHeight: true,
+            centerMode: true,
+            slidesToShow: 1,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  centerPadding: '0'
+                }
+              }
+            ]            
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

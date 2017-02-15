@@ -1,3 +1,5 @@
+<div class="row">
+	<div class="inside-content fadeIn animated">
 <?php get_template_part('templates/page', 'header'); ?>
 
 <?php if (!have_posts()) : ?>
@@ -12,3 +14,5 @@
 <?php endwhile; ?>
 
 <?php the_posts_navigation(); ?>
+</div>
+</div>

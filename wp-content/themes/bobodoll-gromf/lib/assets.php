@@ -66,13 +66,19 @@ function asset_path($filename) {
 }
 
 function assets() {
+
+  //wp_enqueue_style('sage/typo', 'https://fonts.googleapis.com/css?family=Playfair+Display:700i', false, null);
   wp_enqueue_style('sage_css', asset_path('styles/main.css'), false, null);
+  wp_enqueue_style('slick-carousel-theme', asset_path('styles/slick-carousel.css'), false, null);
+  wp_enqueue_style('slick-carousel', asset_path('styles/slick-theme.css'), false, null);
+  wp_enqueue_style('animation', asset_path('styles/animate.css'), false, null);
 
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');
   }
 
   wp_enqueue_script('modernizr', asset_path('scripts/modernizr.js'), [], null, true);
+  wp_enqueue_script('slick', asset_path('scripts/slick.js'), ['jquery'], null, true);
   wp_enqueue_script('sage_js', asset_path('scripts/main.js'), ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);

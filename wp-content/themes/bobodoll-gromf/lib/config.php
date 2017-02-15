@@ -33,7 +33,7 @@ if (!defined('DIST_DIR')) {
 function display_sidebar() {
   static $display;
 
-  if (!isset($display)) {
+  if (isset($display)) {
     $conditionalCheck = new ConditionalTagCheck(
       /**
        * Any of these conditional tags that return true won't show the sidebar.
