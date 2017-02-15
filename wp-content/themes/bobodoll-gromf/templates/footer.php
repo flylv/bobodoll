@@ -37,6 +37,7 @@
   		<div class="columns small-12">
   			<p class="text-center fotinfo"><?php _e('联系方式 : 日本医学美容高端品牌大波娃娃BOBODOLL全国首家涂抹口服微整形', 'sage'); ?><br/>
 			<?php _e('咨询微信 : 48774568', 'sage'); ?></p>
+			<p class="text-center fotinfo">Dev by : AFFLECK.LV (a) gmail.com</p>
   		</div>
   	</div>
   </div>
