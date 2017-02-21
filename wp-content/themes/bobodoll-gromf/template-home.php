@@ -54,6 +54,36 @@
 	<div class="row" data-equalizer data-equalize-by-row="true">
 		<?php
 		$args = array (
+			'post_type'              => array( 'post' ),
+			'posts_per_page'         => '3',
+			'order'                  => 'DESC',
+			'orderby'                => 'date'		
+		);
+
+		$the_query = new WP_Query( $args );?>
+
+		<?php if ( $the_query->have_posts() ) : ?>
+
+			<h2 class="red-point"><?php _e('最新消息', 'sage'); ?></h2>
+
+				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+					<?php get_template_part("templates/content-single-list-pro"); ?>
+
+				<?php endwhile; ?>
+			
+			<?php wp_reset_postdata(); ?>
+
+		<?php endif; ?>
+
+	</div>
+
+</section>
+
+<section class="product-list slideInUp animated">
+	<div class="row" data-equalizer data-equalize-by-row="true">
+		<?php
+		$args = array (
 			'post_type'              => array( 'product' ),
 			'posts_per_page'         => '6',
 			'order'                  => 'DESC',
